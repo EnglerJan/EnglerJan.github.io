@@ -5,33 +5,17 @@
 <meta name="viewport" content= width=device-width, initial-scale=1.0" />
 <title>Main page</title>
 <style>
-  button {
-    background-color: rgb(255,0,0);
-    color: white;
-    border: none;
-    height: 40px;
-    width: 100px;
-  }
+    h1 {text-align: center;
+        }
 </style>
+
 </head>
 <body>
-  <h1>Main page</h1>
-    <p>
-      I love cats and long walks on the beach.
+  <h1>Jan Engler</h1>
+    <h2>Links</h2>
+    <a href="/CV.pdf">CV</a>
     <img src="/overthinking.jpeg">
-    </p>
-    <button onclick="toggle_D1()">Toggle LED</button>
-    <a href=/page2.html>Second page</a>
-    <script>
-      function toggle_D1() {
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {
-          document.getElementById("demo").innerHTML = this.responseText;
-          }
-        xhttp.open("GET", "/LED1_ON.cmd", true);
-        xhttp.send();
-      }
-    </script>
+    <!-- <a href=/page2.html>Second page</a> -->
 </body>
 </html>
 
