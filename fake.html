@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Centrální prodejní a rezervační portál ubytování na kolejích UK | Centrální prodejní a rezervační portál ubytování na kolejích UK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="Description" content="Centr&aacute;ln&iacute; prodejn&iacute; a rezervačn&iacute; port&aacute;l ubytov&aacute;n&iacute; na kolej&iacute;ch UK"/>
+    <link rel="stylesheet" href="/crpp/css/default.css" />
+    <link rel="stylesheet" href="/crpp/css/content.css" />
+    <link rel="stylesheet" href="/crpp/css/header.css" />
+    <link rel="stylesheet" href="/crpp/css/footer.css" />
+    <link rel="stylesheet" href="/crpp/css/main.css" />
+    <link rel="shortcut icon" href="/crpp/images/favicon.ico" type="image/x-icon" />
+    
+<!--<link rel="stylesheet" href="/crpp/css/jquery-ui-1.8.9.custom.css"/>-->
+<script src="/crpp/js/console-log-reset.js"></script>
+<link rel="shortcut icon" href="/crpp/images/favicon.ico" type="image/x-icon"/>
+<script src="/crpp/plugins/jquery-1.8.3/js/jquery/jquery-1.8.3.min.js" type="text/javascript" library="jquery"></script>
+
+
+
+<script type="text/javascript" src="/crpp/js/jquery/jquery.ui.datepicker-cs.js"></script>
+<link href="/crpp/jquery-ui/themes/smoothness/jquery-ui-1.8.11.custom.css" type="text/css" rel="stylesheet" /><script src="/crpp/plugins/jquery-ui-1.8.24/jquery-ui/js/jquery-ui-1.8.24.custom.min.js" type="text/javascript" ></script>
+
+
+
+
+
+
+
+<!-- Official jqgrid resources -->
+
+<!-- TODO: Missing way hot to override locale -->
+<link href="/crpp/plugins/jqgrid-3.8.0.1/css/jqgrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+<link href="/crpp/plugins/jqgrid-3.8.0.1/css/jqgrid/jqgrid.css" rel="stylesheet" type="text/css" />
+<script src="/crpp/plugins/jqgrid-3.8.0.1/js/jqgrid/i18n/grid.locale-cs.js"></script>
+<script src="/crpp/plugins/jqgrid-3.8.0.1/js/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="/crpp/plugins/jqgrid-3.8.0.1/js/jqgrid/jquery.jqGrid.fluid.js"></script>
+
+<script src="/crpp/js/application.js" type="text/javascript"></script>
+
+<link rel='stylesheet' type='text/css' href='/crpp/plugins/export-1.0/css/export.css' />
+<link href="/crpp/js/tooltip/jquery.bubblepopup.v2.3.1.css" rel="stylesheet" type="text/css" />
+<script src="/crpp/js/tooltip/jquery.bubblepopup.v2.3.1.min.js"></script>
+
+<link href="/crpp/js/tinydropdown2/tinydropdown.css" rel="stylesheet" type="text/css" />
+<script src="/crpp/js/tinydropdown2/tinydropdown-packed.js"></script>
+
+<script src="/crpp/js/loading.js"></script>
+<script src="/crpp/js/tableSpliter.js"></script>
+<script src="/crpp/js/input-checkboxizer.js"></script>
+<script src="/crpp/js/input-filler.js"></script>
+<script src="/crpp/js/ys-date.js"></script>
+<script src="/crpp/js/objectFormatters.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X19QQXJMRV"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-X19QQXJMRV');
+</script>
+    
+    
+    <meta name="layout" content="main"/>
+
+    <ga:trackPageview></ga:trackPageview>
+</head>
+
+
+
+<body class="notloggedin">
+  <div id="main-div">
+
+    
+<div id="header">
+  <div id="banner">
+    
+
+<div id="toolbar">
+  <ul>
+    
+    
+    
+    
+    
+
+    
+    <li><a href="/crpp/login/index">přihlásit se</a></li>
+    <li><a href="/crpp/accountRegistration/index">registrovat</a></li>
+
+    
+    
+    
+        <li><a href="/crpp/help/before">první informace</a></li>
+        <li class="last"><a href="/crpp/help/index">nápověda</a></li>
+    
+  </ul>
+</div>
+
+    <div id="logo"><a href="/crpp/"><img src="/crpp/images/logo-shadow.png" alt="CUNI" border="0" /></a></div>
+    <div class="content">Centrální prodejní a rezervační portál ubytování na kolejích UK</div>
+  </div>
+  
+
+<div id="top_nav" class="nav">
+    <ul id="top-nav-menu" class="menu">
+        
+            <li class="home"><li><a href="/crpp/">Domů</a></li>
+            <li class="home"><li><a href="/crpp/eshop/index">Volné kapacity</a></li>
+            <li class="home"><li><a href="/crpp/accommodation/index">Stávající ubytování</a></li>
+            <li class="faq"><a href="/crpp/faqAdmin/listPublic">FAQ</a></li>
+
+            
+                <li class="home"><li><a href="/crpp/flowProcess/rehosFromHomePage">Hodnotící systém</a></li>
+            
+        
+
+        
+
+
+
+        
+
+        
+
+        
+        
+        
+
+    </ul>
+
+    <div class="clearing"></div>
+</div>
+
+<script type="text/javascript">
+    var dropdown = new TINY.dropdown.init("dropdown", {id: 'top-nav-menu', active: 'menuhover'});
+</script>
+
+</div>
+
+    <div id="content-container">
+      <div class="content">
+
+<!-- DEBUG -->
+Year: 2026/2027
+<!-- /DEBUG -->
+
+<div id="confirm-dialog" title="Souhlas se zpracováním osobních údajů">
+
+    <h2>Souhlas se zpracováním osobních údajů</h2>
+
+    <p>Souhlasím se shromažďováním, uchováním a&nbsp;zpracováním osobních údajů společností Univerzita Karlova, Koleje a&nbsp;menzy, se sídlem Zvoníčkova 1927/5, kolej Hvězda, blok A3, 162 08 Praha 6, Česká republika, IČ: 00216208 (příp. jeho zaměstnanci) pro účel stanovený níže. Tento souhlas uděluji na dobu neurčitou. Jsem si vědom/a svých práv podle § 12 a 21 zákona č. 101/2000 Sb., o&nbsp;ochraně osobních údajů. Údaje jsou přesné a&nbsp;pravdivé a&nbsp;jsou poskytovány dobrovolně.</p>
+
+    <h2>Účel zpracování osobních údajů</h2>
+
+    <p>V souladu s&nbsp;§&nbsp;5 zákona č.&nbsp;101/2000 Sb. o&nbsp;ochraně osobních údajů jsou údaje shromažďovány a&nbsp;zpracovávány výhradně pro účely tvorby smluv a&nbsp;zasílání a&nbsp;obchodních sdělení společnosti Univerzita Karlova v&nbsp;Praze, Koleje a&nbsp;menzy prostřednictvím elektronických prostředků podle zákona č.&nbsp;480/2004&nbsp;Sb., o&nbsp;některých službách informační společnosti. Údaje mohou být použity správcem pro statistické účely, a&nbsp;to pro vnitřní potřebu společnosti Univerzita Karlova, Koleje a&nbsp;menzy.</p>
+
+    <h2>Prohlášení společnosti</h2>
+
+    <p>Společnost Univerzita Karlova, Koleje a&nbsp;menzy prohlašuje, že bude shromažďovat osobní údaje v&nbsp;rozsahu nezbytném pro naplnění stanoveného účelu a&nbsp;zpracovávat je pouze v&nbsp;souladu s&nbsp;účelem k&nbsp;němuž byly shromážděny. Zaměstnanci správce nebo jiné fyzické osoby, které zpracovávají osobní údaje na základě smlouvy se správcem a&nbsp;další osoby jsou povinni zachovávat mlčenlivost o&nbsp;osobních údajích, a&nbsp;to i&nbsp;po skončení pracovního poměru nebo prací.</p>
+
+    <h2>Informační povinnost správce</h2>
+
+    <p><b>Správce osobních údajů:</b> Univerzita Karlova, Koleje a&nbsp;menzy, je součástí Univerzity Karlovy, IČO&nbsp;00216208.</p>
+    <p>Pověřence DPO lze kontaktovat na e-mailové adrese: <a href="mailto:gdpr@kam.cuni.cz">gdpr@kam.cuni.cz</a>.</p>
+    <p><b>Osobní údaje, které zpracováváme ohledně ubytování a&nbsp;služeb kolejí, zpracováváme výhradně na základě plnění právní povinnosti a&nbsp;oprávněných zájmů provozovatele koleje. V&nbsp;souvislosti s&nbsp;ochranou osobních údajů můžete kontaktovat správce na e-mailové adrese: <a href="mailto:gdpr@kam.cuni.cz">gdpr@kam.cuni.cz</a>. Tato adresa neslouží pro dotazy na základní ubytování.</b></p>
+
+    <h3>Seznam zpracovávaných osobních údajů:</h3>
+
+    <p>Osobní identifikační číslo vydané Informační službou UK, jméno a&nbsp;příjmení, včetně titulů, přihlašovací jméno, identifikační karta, číslo bankovního účtu, variabilní symbol.</p>
+
+    <h3>Účel a&nbsp;právní důvod zpracování osobních údajů:</h3>
+
+    <p>Komplexní poskytování ubytovacích služeb klientům registrovaným v&nbsp;ubytovacím systému, spočívající zejména v poskytování ubytování, úklidu, výměny prádla, půjčování inventáře.
+    Právními důvody pro zpracování osobních údajů jsou zejména zákon č. 111/1998 Sb., o&nbsp;vysokých školách, zákon č. 89/2012 Sb., občanský zákoník, zákon č.&nbsp;262/2006&nbsp;Sb., zákon č.&nbsp;563/1991&nbsp;Sb., o&nbsp;účetnictví, a&nbsp;v&nbsp;neposlední řadě zákon  č.&nbsp;326/1999&nbsp;Sb. o&nbsp;pobytu cizinců na území České republiky. Se všemi uvedenými normami pracujeme v platném znění.
+    Údaje o&nbsp;ubytovaných osobách jsme povinni uchovávat podle zákonů až 6&nbsp;let.</p>
+
+    <h3>Splnění informační povinnosti správce:</h3>
+
+    <p>Ke splnění informační povinnosti správce došlo v okamžiku poskytnutí mých osobních údajů při zajištění mého ubytování v&nbsp;koleji.</p>
+    <p>Beru na vědomí, že informace o zpracování osobních údajů jsou trvale přístupné na úřední desce KaM (Informační memorandum) a&nbsp;dále v&nbsp;koleji, kde jsem ubytován.</p>
+
+    <h3>Prohlášení správce a doba zpracování:</h3>
+
+    <p>Správce prohlašuje, že bude shromažďovat osobní údaje v rozsahu nezbytném pro naplnění stanoveného účelu a&nbsp;zpracovávat je pouze v souladu s&nbsp;účelem, k&nbsp;němuž byly shromážděny. Zaměstnanci správce nebo jiné osoby (subzpracovatelé), které zpracovávají osobní údaje na základě smlouvy se správcem, jsou povinny zachovávat mlčenlivost o&nbsp;osobních údajích, a&nbsp;to i&nbsp;po skončení pracovního poměru nebo prací. Osobní údaje zpracovávané pro plnění povinností vyplývajících ze zvláštních právních předpisů předává správce orgánům veřejné moci pouze v případech, kdy mu tak ukládá zákon. Shromážděné osobní údaje správce nepředává do zemí mimo Evropskou unii nebo Evropský hospodářský prostor, ani do žádné jiné mezinárodní organizace.</p>
+
+    <h3>Práva subjektu údajů:</h3>
+    <h4>Máte za sebe právo:</h4>
+    <ul>
+        <li>požádat o&nbsp;informace, které o&nbsp;vás zpracováváme,</li>
+        <li>požadovat odstranění informací, pokud se domníváte, že nemáme důvod pro jejich zpracování,</li>
+        <li>požadovat aktualizaci informací, pokud jsou neplatné nebo zastaralé,</li>
+        <li>požadovat, aby nebyly údaje zpracovávány do doby, než bude vyřešena oprávněnost námitek,</li>
+        <li>vyžádat si podrobnější popis práv a&nbsp;způsobu zpracování požadavků ohledně ochrany osobních údajů</li>
+    </ul>
+
+    <p>Na vyřešení všech vašich požadavků máme termín 30 kalendářních dní, ale budeme se snažit pracovat rychleji. Vzhledem k&nbsp;tomu, že musíme osobní údaje chránit, musíme si při každé žádosti být jisti, že jednáte skutečně za sebe. Bude proto nutné, abyste se s&nbsp;požadavkem nebo následně po podání žádosti osobně dostavil na recepci koleje s&nbsp;dokladem totožnosti a&nbsp;potvrdil, že jste skutečně žádost podal vy.</p>
+
+    <p>Dále připomínáme, že pokud nejste spokojeni s&nbsp;tím, jak osobní údaje zpracováváme nebo řešíme vaše požadavky ohledně práce s osobními údaji, máte právo podat stížnost na dozorový orgán dohlížející na ochranu osobních údajů.</p>
+
+    <p>Prohlašuji, že jsem s výše uvedenou informací seznámen.</p>
+</div>
+
+<div class="body dashboard">
+    <div id="left-column" style="width: 20%">
+        <div style=" padding: 0;">
+            
+                
+                
+                    <div class="verticalMenu">
+                        <h3>Praha</h3>
+                        <ul>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380942">Budeč</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380952">Hostivař</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380944">Hvězda</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380939">Jednota</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380946">Kajetánka</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380958">Komenského</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380961">Krystal</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380945">Na Větrníku</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380950">Otava</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380943">Švehlova</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380951">Vltava</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380948">17. listopadu</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            
+                
+                
+                    <div class="verticalMenu">
+                        <h3>Plzeň</h3>
+                        <ul>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380953">Bolevecká</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380954">Heyrovského</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            
+                
+                
+                    <div class="verticalMenu">
+                        <h3>Hradec Králové</h3>
+                        <ul>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380957">Jana Palacha</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380956">Na Kotli</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            
+                
+                
+                    <div class="verticalMenu">
+                        <h3>Brandýs nad Labem</h3>
+                        <ul>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380947">Ivana Olbrachta</a>
+                                </li>
+                            
+                                <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <a href="/crpp/eshop/collegeDetail/380949">Nová Kolej</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            
+        </div>
+    </div>
+
+
+    <div id="right-column" style="width: 80%;">
+        <div style=" padding: 0 0 0 10px;">
+
+            <h1>Kolej 17. listopadu</h1>
+
+            <div class="message">
+                <p>Po stisknutí tlačítka Rezervuj nejprve provedete registraci a následně si bude moci zvolit na jaké období požadujete ubytovaní tj. zda na stávající rok, nebo na nový rok anebo na delší časové období.</p>
+            </div>
+
+            <table class="form">
+                <thead>
+
+<th>Popis<th>
+<th>Kč/noc<th>
+<th>Muži<th>
+<th>Ženy<th>
+<th>Neurčeno<th>
+<th><th>
+</thead>
+                <tbody>
+                
+                
+                    <tr>
+    
+    <td>2-lůžkový pokoj se soc. zař.<td>
+    <td>174<td>
+    <td><b>0</b><td>
+    <td><b>0</b><td>
+    <td><b>0</b><td>
+    <td>
+        
+    <td>
+</tr>
+
+
+                
+                </tbody>
+            </table>
+            
+<h2>Kolej 17. listopadu</h2>
+<img style="width: 150px; float: left; margin-right: 10px; margin-bottom: 10px" src="/crpp/images/college/KAM-47-version1-listopad_1106.jpg">
+<table class="form" style="float: left; width: 580px">
+    <tbody>
+    
+    <tr>
+        <th>Adresa:</th>
+        <td>
+            Kolej 17. listopadu<br/>
+            Pátkova 2136/3<br/>
+            180 00&nbsp;&nbsp;Praha 8<br/>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <th>Telefon:</th>
+        <td>+420 284 684 393 (recepce A), <br />+420 286 684 393 (recepce B), <br />+420 286 021 617 (ubytování), <br />+420 286 021 619 (ubytování), <br />+420 233 557 986 (vedoucí koleje), <br />+420 286 021 352 (vedoucí koleje)</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <th>E-mail:</th>
+        
+        <td>kolej.17.listopadu(zavináč)kam.cuni.cz, <br />jana.provaznikova(zavináč)kam.cuni.cz, <br />marie.gregorova(zavináč)kam.cuni.cz, <br />andrea.vojackova(zavináč)kam.cuni.cz</td>
+    </tr>
+    
+    
+    <tr>
+        <th>Kontaktní osoby:</th>
+        <td>Gregorová Marie, Vojáčková Andrea</td>
+    </tr>
+    
+    
+    <tr>
+        <th>Počet lůžek:</th>
+        <td>1472</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <th>MHD:</th>
+        <td>Tram. č 17 a 14 (700m) , BUS 112 (150m)</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    $('#confirm-dialog').hide();
+
+    $('.buttonOption').on('click', function (event) {
+
+        event.preventDefault();
+
+        var $this = $(this);
+        $("#confirm-dialog").dialog({
+            modal: true,
+            resizable: false,
+            height: "auto",
+            width: "90%",
+            buttons: {
+                "Souhlasím": function () {
+                    $(this).dialog("close");
+                    $this.closest('form').submit();
+                },
+                "Nesouhlasím": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+    });
+
+</script>
+
+
+</div>
+      <div class="clearing">&nbsp;</div>
+    </div>
+
+    
+<div id="footer">
+  <p class="copyright">
+		<a href="http://www.cuni.cz">Univerzita Karlova</a> &copy; 2026 Centrální prodejní a rezervační portál ubytování na kolejích UK verze 1.34.3</p>
+</div>
+
+  </div>
+</body>
+</html>
