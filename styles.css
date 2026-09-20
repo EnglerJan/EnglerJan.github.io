@@ -1,6 +1,11 @@
-/* body { */
-/* 	color: white; */
-/* 	background: black;} */
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  color: light-dark(#1a1b26, #f0f0f0);
+  background-color: light-dark(#f0f0f0, #1a1b26);
+}
 
 h1 {text-align: center;
 	}
@@ -10,7 +15,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #1a1b26;
 }
 
 ul li {
