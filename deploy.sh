@@ -1,5 +1,8 @@
 #/usr/bin/bash
 
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/github
+
 dir="$HOME/sc/EnglerJan.github.io"
 cd "$dir" || exit 1
 
